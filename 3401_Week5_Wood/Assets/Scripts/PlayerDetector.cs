@@ -13,7 +13,7 @@ public class PlayerDetector : MonoBehaviour {
     void Update() {
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
         if (Physics.Raycast(transform.position, fwd, 5))
-            Debug.Log(transform.name);
+            Debug.Log(gameObject.transform.name);
         if (Physics.Raycast(transform.position, fwd, 5) == false)
             Debug.Log("NOTHING AHEAD");
     } 
